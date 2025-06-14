@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "server.forest": "StartDebugging",
+        "server.desert": "StartDebugging"
+      }
+    }
+  }
+}

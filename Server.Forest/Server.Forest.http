@@ -1,0 +1,6 @@
+@Server.Forest_HostAddress = http://localhost:5230
+
+GET {{Server.Forest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
