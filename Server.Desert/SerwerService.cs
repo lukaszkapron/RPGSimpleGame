@@ -25,7 +25,7 @@ public class SerwerService : BackgroundService
             HostName = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "localhost"
         };
 
-        const int maxRetries = 10;
+        const int maxRetries = 20;
         int retryCount = 0;
 
         while (!stoppingToken.IsCancellationRequested && retryCount < maxRetries)
