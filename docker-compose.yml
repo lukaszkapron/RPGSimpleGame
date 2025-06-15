@@ -10,8 +10,8 @@ services:
 
   server-forest:
     build:
-      context: ./Server.Forest
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Server.Forest/Dockerfile
     ports:
       - "5001:80"
     depends_on:
@@ -23,8 +23,8 @@ services:
 
   server-desert:
     build:
-      context: ./Server.Desert
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Server.Desert/Dockerfile
     ports:
       - "5002:80"
     depends_on:
